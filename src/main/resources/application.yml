@@ -1,0 +1,27 @@
+spring:
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    show-sql: false
+    properties:
+      hibernate:
+        show_sql: false
+  datasource:
+    url: jdbc:h2:mem:climadb
+    driverClassName: org.h2.Driver
+    username: sa
+    password: sa
+  h2:
+    console:
+      enabled: true
+      path: /h2
+      settings:
+        web-allow-others: true
+
+server:
+  port: ${PORT:8080}
+  servlet:
+    context-path: /user
+
+logging:
+  file:
+    name: logback.xml

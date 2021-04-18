@@ -1,10 +1,11 @@
 package com.lucasian.docker.api.modelo;
 
-import lombok.Builder;
-import lombok.Getter;
+import lombok.*;
 
 
-@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+@Setter
 @Getter
 public class UserRequest {
 
